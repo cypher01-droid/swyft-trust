@@ -1,0 +1,139 @@
+/* ===== Header Container ===== */
+.header {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  background: rgba(28, 25, 44, 0.25); /* dark glass */
+  backdrop-filter: blur(15px);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(76, 29, 149, 0.5); /* dark purple shadow */
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+}
+
+/* ===== Logo ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(135deg, #6D28D9, #8B5CF6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  box-shadow: 0 10px 40px rgba(76, 29, 149, 0.5);
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #8B5CF6;
+}
+
+/* ===== Desktop Nav ===== */
+.nav-desktop {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #8B5CF6;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===== Hamburger ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.bar {
+  width: 1.75rem;
+  height: 3px;
+  background: #8B5CF6;
+  transition: all 0.3s ease;
+}
+
+.rotate1 {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.rotate2 {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+.hide {
+  opacity: 0;
+}
+
+/* ===== Mobile Nav ===== */
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: rgba(28, 25, 44, 0.95);
+  backdrop-filter: blur(15px);
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 10px 40px rgba(76, 29, 149, 0.5);
+}
+
+.nav-mobile .nav-link {
+  color: #fff;
+}
+
+.nav-mobile .nav-link:hover {
+  color: #8B5CF6;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

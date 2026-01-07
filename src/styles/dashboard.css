@@ -1,0 +1,43 @@
+.dashboard-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #6D28D9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dashboard-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f7f7f7;
+  border-radius: 8px;
+}
+
+.dashboard-section h2 {
+  margin-bottom: 1rem;
+}
+
+.spinner {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5rem;
+  color: #6D28D9;
+}

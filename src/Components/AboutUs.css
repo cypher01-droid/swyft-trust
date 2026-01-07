@@ -1,0 +1,70 @@
+/* AboutUs.css */
+
+.about-us {
+  width: 100%;
+  padding: 6rem 2rem;
+  background: #f9f9fc; /* light subtle background */
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap; /* stacks on smaller screens */
+}
+
+.about-text {
+  flex: 1;
+  color: #1f2937; /* dark text for readability */
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6d28d9; /* purple accent for heading */
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #374151; /* slightly lighter text */
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px; /* keeps it from being too large on desktop */
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* soft 3D shadow */
+  object-fit: cover; /* ensures the JPG fills the container nicely */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 80%;
+    margin-bottom: 2rem;
+  }
+}
