@@ -1,60 +1,86 @@
 .features-section {
-  width: 100%;
-  padding: 6rem 2rem;
-  background: #f9f9fb;
-  display: flex;
-  justify-content: center;
+  padding: 100px 0;
+  background: var(--bg-deep); /* Uses the dark background variable from App.css */
 }
 
 .features-container {
-  width: 100%;
-  max-width: 1400px;
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-.features-container h2 {
+.features-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.features-header h2 {
   font-size: 2.5rem;
+  font-weight: 800;
+  margin: 15px 0;
+  color: white;
+}
+
+.features-header p {
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.status-badge-feat {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(157, 80, 255, 0.1);
+  border: 1px solid rgba(157, 80, 255, 0.2);
+  border-radius: 100px;
+  color: var(--accent-purple);
+  font-size: 0.75rem;
   font-weight: 700;
-  margin-bottom: 3rem;
-  color: #1F2937;
+  text-transform: uppercase;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
 }
+
+@media (min-width: 768px) {
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .features-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
 
 .feature-card {
-  background: #fff;
-  border-top: 6px solid #8B5CF6;
-  border-radius: 1rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  border-top: 4px solid; /* Uses color passed via style prop */
 }
 
 .feature-icon {
-  margin-bottom: 1rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
 }
 
 .feature-card h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 10px 0;
 }
 
 .feature-card p {
-  font-size: 0.95rem;
-  color: #4B5563;
-  line-height: 1.5;
+  color: var(--text-muted);
+  line-height: 1.6;
 }

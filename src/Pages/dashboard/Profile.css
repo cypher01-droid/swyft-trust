@@ -1,0 +1,168 @@
+.profile-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.profile-header-main {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+}
+
+.avatar-circle {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-card);
+  border: 2px solid var(--accent-purple);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--accent-purple);
+}
+
+.verified-badge-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.account-id {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.tier-card-glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+  border: 1px solid var(--glass-border);
+  padding: 15px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.tier-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tier-info span { font-size: 0.75rem; color: var(--text-muted); display: block; }
+.tier-info h4 { margin: 0; font-size: 1rem; color: #fcd34d; }
+
+.tier-details-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Compliance Card */
+.kyc-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.status-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.status-pill {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.status-pill.verified { background: rgba(0, 242, 148, 0.1); color: var(--success); }
+
+.doc-list-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 15px;
+}
+
+.doc-item-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.doc-status {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: var(--success);
+  font-weight: 600;
+}
+
+/* Personal Info Rows */
+.info-list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--accent-purple);
+}
+
+.info-text span { display: block; font-size: 0.7rem; color: var(--text-muted); }
+.info-text p { margin: 2px 0 0 0; font-size: 0.95rem; color: white; font-weight: 500; }
+
+.logout-btn-full {
+  width: 100%;
+  margin-top: 40px;
+  background: rgba(255, 77, 77, 0.1);
+  border: 1px solid rgba(255, 77, 77, 0.2);
+  color: var(--danger);
+  padding: 18px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn-full:hover {
+  background: var(--danger);
+  color: white;
+}
+
+.app-version-text {
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 20px;
+  opacity: 0.5;
+}

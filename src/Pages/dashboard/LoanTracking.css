@@ -1,0 +1,40 @@
+/* You can copy the styles from RefundTracking.css here, as they share the same structure */
+
+/* --- LOAN SPECIFIC STYLES --- */
+
+.loan-terms-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: var(--bg-deep);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.term-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.term-item.full-width {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.term-item p { margin: 0; }
+.term-item strong { color: var(--text-main); font-size: 0.9rem; }
+
+.disclaimer {
+    /* Use the same styling as the refund tracking disclaimer */
+    margin-top: 20px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 12px;
+    line-height: 1.4;
+}

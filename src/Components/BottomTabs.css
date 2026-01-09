@@ -1,0 +1,104 @@
+.nav-container {
+  position: fixed;
+  bottom: 20px; /* Floats above the bottom edge */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 450px;
+  z-index: 900; /* Below the TopBar Modals (9999) but above content */
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(20, 20, 27, 0.85); /* Deep charcoal glass */
+  backdrop-filter: blur(15px);
+  padding: 10px 15px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #94a3b8; /* Muted gray */
+  gap: 4px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex: 1;
+}
+
+.nav-item span {
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+/* Active State Logic */
+.nav-item.active {
+  color: #9d50ff; /* Your electric purple */
+  transform: translateY(-4px);
+}
+
+.nav-item.active span {
+  opacity: 1;
+}
+
+/* The Active Indicator Dot */
+.nav-item.active::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #9d50ff;
+  border-radius: 50%;
+  margin-top: 2px;
+  box-shadow: 0 0 8px #9d50ff;
+}
+
+/* Center Menu Button (The "Beast" Mode) */
+.center-wrapper {
+  position: relative;
+  top: -25px; /* Lifts it out of the bar */
+  filter: drop-shadow(0 8px 15px rgba(157, 80, 255, 0.4));
+}
+
+.center-btn {
+  background: linear-gradient(135deg, #9d50ff, #6e2cf2);
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg); /* Modern diamond shape */
+  transition: 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.center-btn svg {
+  transform: rotate(-45deg); /* Keeps icon straight while box is rotated */
+}
+
+.center-btn:hover {
+  transform: rotate(45deg) scale(1.1);
+}
+
+.center-btn.active {
+  box-shadow: 0 0 20px rgba(157, 80, 255, 0.6);
+  border-color: white;
+}
+
+/* Remove indicator for center btn */
+.center-btn.active::after {
+  display: none;
+}
+
+/* Mobile Tweak: Hide text on very small screens to keep it clean */
+@media (max-width: 360px) {
+  .nav-item span {
+    display: none;
+  }
+}

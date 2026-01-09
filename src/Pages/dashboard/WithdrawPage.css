@@ -1,0 +1,130 @@
+.withdraw-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.available-box {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  border-left: 4px solid var(--accent-purple);
+}
+
+.available-box span { color: var(--text-muted); font-size: 0.8rem; }
+.available-box h3 { margin: 5px 0 0 0; font-size: 1.8rem; }
+
+.amount-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.currency-prefix {
+  position: absolute;
+  left: 15px;
+  font-weight: 700;
+  color: var(--accent-purple);
+}
+
+.amount-input-wrapper input {
+  padding-left: 35px !important;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.method-btn {
+  background: var(--bg-deep);
+  border: 1px solid var(--glass-border);
+  padding: 15px;
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.method-btn.active {
+  border-color: var(--accent-purple);
+  background: rgba(157, 80, 255, 0.1);
+}
+
+.error-text {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.security-note {
+  display: flex;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.success-card {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.success-icon-wrapper {
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+.tracking-code-box {
+  background: var(--bg-deep);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.tracking-code-box code {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--accent-purple);
+  margin-top: 5px;
+}
+
+.action-row {
+  display: flex;
+  gap: 10px;
+}
+
+.secondary-btn {
+  flex: 1;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  flex: 2;
+  background: var(--accent-purple);
+  border: none;
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}

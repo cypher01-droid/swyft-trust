@@ -1,0 +1,121 @@
+.intro-card {
+  text-align: center;
+  padding: 40px 25px;
+}
+
+.security-illustration {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.shield-ring {
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--accent-purple);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.security-badge-small {
+  background: rgba(157, 80, 255, 0.1);
+  color: var(--accent-purple);
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 15px 0 25px 0;
+}
+
+.qr-box-container {
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.setup-instructions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.step-count {
+  background: var(--accent-purple);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+}
+
+.manual-key-box {
+  background: var(--bg-deep);
+  border: 1px solid var(--glass-border);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 25px 0;
+}
+
+.manual-key-box code {
+  color: var(--accent-purple);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.otp-input {
+  width: 100%;
+  background: var(--bg-deep);
+  border: 2px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 8px;
+  color: white;
+  margin: 20px 0;
+}
+
+.otp-input:focus {
+  border-color: var(--accent-purple);
+  outline: none;
+}
+
+.warning-box {
+  display: flex;
+  gap: 10px;
+  color: #fcd34d;
+  background: rgba(252, 211, 77, 0.05);
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.recovery-notice {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px 0;
+  line-height: 1.4;
+}
+
+.glow-circle {
+  filter: drop-shadow(0 0 15px var(--success));
+  margin-bottom: 20px;
+}

@@ -1,0 +1,136 @@
+.exchange-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.tab-switcher {
+  display: flex;
+  background: var(--bg-card);
+  padding: 6px;
+  border-radius: 16px;
+  margin-top: 20px;
+  border: 1px solid var(--glass-border);
+}
+
+.tab-switcher button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-switcher button.active {
+  background: var(--bg-deep);
+  color: var(--accent-purple);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.asset-input-box {
+  background: var(--bg-deep);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+}
+
+.input-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.input-row input {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  width: 100%;
+  outline: none;
+}
+
+.asset-selector {
+  background: var(--bg-card);
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 800;
+  color: var(--accent-purple);
+  border: 1px solid var(--glass-border);
+}
+
+.divider-action {
+  display: flex;
+  justify-content: center;
+  margin: -15px 0;
+  position: relative;
+  z-index: 5;
+}
+
+.circle-action-btn {
+  width: 44px;
+  height: 44px;
+  background: var(--accent-purple);
+  border: 4px solid var(--bg-card);
+  border-radius: 50%;
+  color: white;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.hub-action-btn {
+  width: 100%;
+  background: linear-gradient(135deg, var(--accent-purple), #6e2cf2);
+  border: none;
+  padding: 18px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 800;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px var(--accent-glow);
+}
+
+.hub-action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.success-view {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.success-glow {
+  filter: drop-shadow(0 0 20px var(--accent-glow));
+  margin-bottom: 20px;
+}

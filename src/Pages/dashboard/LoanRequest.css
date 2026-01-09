@@ -1,0 +1,101 @@
+.loan-request-container {
+  padding: 20px;
+  max-width: 550px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.loan-type-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.loan-type-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.loan-type-card.selected {
+  border-color: var(--accent-purple);
+  background: rgba(157, 80, 255, 0.05);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.type-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--bg-deep);
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: var(--accent-purple);
+}
+
+.type-info h4 { margin: 0; font-size: 1.1rem; color: white; }
+.type-info span { font-size: 0.8rem; color: var(--text-muted); }
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.type-badge {
+  background: var(--accent-purple);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.form-header button {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.security-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px;
+  border-radius: 12px;
+  margin: 20px 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.success-screen {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.ref-box {
+  background: var(--bg-deep);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 25px 0;
+}
+
+.ref-box code {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--accent-purple);
+  margin-top: 5px;
+  letter-spacing: 2px;
+}

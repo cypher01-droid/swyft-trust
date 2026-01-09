@@ -1,0 +1,81 @@
+.cards-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+/* ===============================
+   COMING SOON CARD
+================================ */
+.coming-soon-card {
+  margin-top: 30px;
+  padding: 45px 25px;
+  text-align: center;
+
+  background: linear-gradient(
+    180deg,
+    rgba(157, 80, 255, 0.08),
+    rgba(0, 0, 0, 0.1)
+  );
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.coming-soon-card svg {
+  filter: drop-shadow(0 0 25px var(--accent-glow));
+}
+
+.coming-soon-card h2 {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.coming-soon-card p {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* ===============================
+   INFO PILL
+================================ */
+.info-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 25px;
+  padding: 10px 18px;
+
+  background: var(--bg-deep);
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+
+  color: var(--accent-purple);
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  box-shadow: 0 0 18px rgba(157, 80, 255, 0.15);
+}
+
+/* ===============================
+   SECONDARY INFO NOTE
+================================ */
+.info-note {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  opacity: 0.8;
+}

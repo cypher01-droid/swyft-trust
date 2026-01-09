@@ -1,71 +1,83 @@
-.reviews {
-  width: 100%;
-  padding: 6rem 2rem;
-  background: #fff;
-  display: flex;
-  justify-content: center;
+.reviews-section {
+  padding: 100px 0;
+  background: var(--bg-deep); /* Uses the dark background variable from App.css */
 }
 
 .reviews-container {
   max-width: 1200px;
-  width: 100%;
+  margin: 0 auto;
+}
+
+.reviews-header {
   text-align: center;
+  margin-bottom: 50px;
+  padding: 0 24px;
 }
 
-.reviews-container h2 {
+.reviews-header h2 {
   font-size: 2.5rem;
-  color: #6d28d9; /* purple accent */
-  margin-bottom: 3rem;
-  font-weight: 700;
+  font-weight: 800;
+  margin: 15px 0;
+  color: white;
 }
 
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+.status-badge-rev {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(0, 242, 148, 0.1);
+  border: 1px solid rgba(0, 242, 148, 0.2);
+  border-radius: 100px;
+  color: var(--success);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Marquee Styles */
+.reviews-marquee-wrapper {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  margin-bottom: 20px;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 30px;
+  padding: 10px 0;
+  white-space: nowrap;
 }
 
 .review-card {
-  background: #f3f4f6;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  padding: 25px;
+  border-radius: 20px;
+  min-width: 350px; /* Fixed width for consistent scroll */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
-.review-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-.review-avatar {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 1rem;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid #6d28d9;
-}
+.review-name { font-weight: 700; color: white; margin: 0; }
+.review-role { font-size: 0.8rem; color: var(--text-muted); margin: 0; }
 
-.review-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+.rating { display: flex; gap: 4px; }
 
 .review-message {
-  font-size: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
   font-style: italic;
-  color: #374151;
-  margin-bottom: 1rem;
-}
-
-.review-name {
-  font-weight: 600;
-  color: #1f2937;
-}
-
-.review-role {
-  font-size: 0.9rem;
-  color: #6b7280;
+  margin: 0;
 }
